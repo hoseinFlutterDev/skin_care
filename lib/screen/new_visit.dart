@@ -383,7 +383,7 @@ class _NewVisitState extends State<NewVisit> {
                     size: 35,
                   ),
                 ),
-                SizedBox(height: 150),
+                SizedBox(height: 250),
               ],
             ),
           ),
