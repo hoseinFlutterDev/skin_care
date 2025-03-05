@@ -184,27 +184,30 @@ class _UserDetailPageState extends State<UserDetailPage> {
                           child: Row(
                             children: [
                               SizedBox(width: 10),
-                              Text(
-                                'Name :',
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: const Color.fromARGB(
-                                    255,
-                                    62,
-                                    131,
-                                    227,
+                              Expanded(
+                                child: Text(
+                                  'Name :',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: const Color.fromARGB(
+                                      255,
+                                      62,
+                                      131,
+                                      227,
+                                    ),
                                   ),
                                 ),
                               ),
                               SizedBox(width: 10),
                               Expanded(
+                                flex: 2,
                                 child: controltext(
                                   text: AddPatientPage.nameController.text,
                                   controler: AddPatientPage.nameController,
                                 ),
                               ),
                               SizedBox(
-                                width: screenSize(context).screenWidth * 0.50,
+                                width: screenSize(context).screenWidth * 0.40,
                               ),
                               Expanded(
                                 child: IconButton(
@@ -329,7 +332,7 @@ class _UserDetailPageState extends State<UserDetailPage> {
                                     SizedBox(
                                       width:
                                           screenSize(context).screenWidth *
-                                          0.45,
+                                          0.38,
                                     ),
                                     Container(
                                       padding: EdgeInsets.all(10),
@@ -356,6 +359,7 @@ class _UserDetailPageState extends State<UserDetailPage> {
                                               fontSize: 14,
                                             ),
                                           ),
+                                          SizedBox(height: 15),
                                           //! Data
                                           GestureDetector(
                                             onTap: () async {
@@ -421,6 +425,7 @@ class _UserDetailPageState extends State<UserDetailPage> {
                                               ],
                                             ),
                                           ),
+                                          SizedBox(height: 10),
                                           //Time
                                           GestureDetector(
                                             onTap: () async {
